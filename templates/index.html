@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/slate/bootstrap.min.css">
+    <link src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <br>
+        <b>
+            <h1 class='text-center'>BellyButton Dashboard</h1>
+        </b>
+    </header>
+    <div class="container">
+        <div class="text-center">
+            <!-- <br> -->
+            <br>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/names" target="_blank" role="button">Sample Names Route</a>
+                <!-- <a class="btn btn-primary btn-lg" href="/twitterize" role="button">Load New Tweets</a>
+                <a class="btn btn-primary btn-lg" href="/scrape" role="button">City News</a> -->
+            </p>
+        </div>
+
+        <div class="container">
+                <div class="card border-info">
+                    <div class='card-header'>
+                        <div class="form-group">
+                            <label for="selDataset">SELECT Sample:</label>
+                            <br>
+                            <select class="col-sm-2 col-form-control" id="selDataset" onchange="optionChanged(this.value)"></select>
+                        </div>
+                    </div>
+                </div>
+                <div id="plot"> </div>           
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+<script src="../static/js/scripts.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+[
+  {
+    "AGE": 34.0,
+    "BBTYPE": "I",
+    "ETHNICITY": "Caucasian/Midleastern",
+    "GENDER": "F",
+    "LOCATION": "Chicago/IL",
+    "SAMPLEID": 941
+  }
+]
